@@ -1,5 +1,5 @@
 .title.large-text Collaborate - Deploy - Scale
-#command-line.container.black.cli
+#command-line.cli
   :javascript
     $(function(){
       $(window).load(function(){
@@ -11,16 +11,86 @@
     });
   .element
 
-.title.small-text From hobbyists to enterprise, developers have chosen to deploy more than 4 million web applications with Heroku
+.title.small-text From hobbyists to enterprise, developers have chosen to deploy more than 4 million web applications with us
 
 .btn-wrapper
   %a{href: "https://signup.heroku.com/www-home-top"}
     .start-button.signup-btn
-      .btn-title Get Started
+      .btn-title GET STARTED
+
+.container.light{style: 'min-height: 500px;'}
+  .title.large-text.black Everything you need to build, manage, and scale web applications
+
+  .third
+    .free-trial-conatiner
+      .text.black.text-large
+        %a{href: 'https://signup.heroku.com/www-home-top', class: 'outbound-link'}
+          Try us for free
+    .copy.black.copy-large
+      Getting started is easy and you deploying your app takes about 5 minutes. Pricing is transparent and you choose only the features you need. 
+      %hr
+      %a{href: "https://devcenter.heroku.com/", class: 'outbound-link'} Getting Started
+
+  .third
+    .free-trial-conatiner
+      .text.black.text-large
+        %a{href: 'https://signup.heroku.com/www-home-top', class: 'outbound-link'}
+          Active Community
+    .copy.black.copy-large
+      Our community is proud, our tutorials are strong, and we support those who advocate for us. Heroku is built with developer happiness in mind.
+      %hr
+      %a{href: 'https://blog.heroku.com/', class: 'outbound-link'} See what we write
+    
+
+  .third
+    .free-trial-conatiner
+      .text.black.text-large
+        %a{href: 'https://signup.heroku.com/www-home-top', class: 'outbound-link'}
+          Amazing Support
+    
+    .copy.black.copy-large
+      From billing to technical issues our customers come first. Curious if your companies technology stack working with us? 
+      %hr
+      %a{href: 'https://www.heroku.com/connect', class: 'outbound-link'}Lets talk..
+
+ 
+
+.container.dark
+  .title.large-text Still unsure about..
+  .worries
+    .item deployment speeds
+    .item pricing scale
+    .item lack of control 
+  %a.title.large-text{href: 'https://www.heroku.com/customers', class: 'outbound-link'} Learn from those who choose us after exploring their options..
+
 
 .container.light
-  light
-.container.dark
-  dark
-.container.light
-  light
+  .client-wrapper
+    .client= image_tag 'toyota.png'
+    .client.top= image_tag 'apt_list.png'
+    .client.top= image_tag 'quickly.png'
+    .client.top= image_tag 'macys.png'
+    .client= image_tag 'scoot.png'
+
+
+.btn-wrapper
+  #command-line.cli
+    :javascript
+      $(function(){
+        $(window).load(function(){
+          $(".element").typed({
+            strings: ["$ heroku create", "$ heroku login","$ git push heroku master" ],
+            typeSpeed: 30
+          });
+        })
+      });
+    .element
+  %a{href: "https://signup.heroku.com/www-home-top"}
+    .start-button.signup-btn
+      .btn-title Lets do this
+
+
+.logo-wrapper
+  .left A
+  = link_to (image_tag "salesforce.png"), 'http://salesforce.com'
+  .right company

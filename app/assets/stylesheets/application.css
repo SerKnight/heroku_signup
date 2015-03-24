@@ -18,14 +18,24 @@
 body {
 	background-color: #3B2F63;	
   margin: 50px;
+  float: left;
 }
 .container {
 	position: relative;
 	float: left;
-	height: 500px;
   width: 100%;
 }
+.footer-wrapper {
+	height: 150px;
+	float: left;
+	width: 100%;
+}
 
+.logo-wrapper {
+	text-align: center;
+	float: left;
+	width: 100%;
+}
 .dark {
 	background-color: #3B2F63;
 }
@@ -33,6 +43,15 @@ body {
 .light {
 	background-color: #F8F8F8;
 }
+
+.outbound-link {
+	text-decoration: none;
+	color: #3B2F63;
+}
+
+.outbound-link:hover{
+	opacity: 0.6;
+};
 
 #header-container {
 	position: relative;
@@ -46,7 +65,57 @@ body {
 	margin: 20px;
 }
 
+.left-half {
+  text-align: center;
+  margin-top: 50px;
+  width: 30%;
+  float: left;
+  margin-left: 10%;
+}
 
+.right-half {
+	text-align: center;
+	margin-top: 50px;
+	width: 50%;
+	float: right;
+}
+
+.third {
+	text-align: center;
+	margin-top: 50px;
+  width: 25%;
+  float: left;
+  margin-left: 4%;
+  margin-right: 4%;
+}
+
+.text {
+	font-family: 'benton-sans','Helvetica Neue',helvetica,arial,sans-serif;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	color: #000;
+	font-size: 1.8em;
+	-webkit-font-smoothing: antialiased;
+	font-weight: 100;
+}
+
+.copy {
+	font-family: 'benton-sans','Helvetica Neue',helvetica,arial,sans-serif;
+	color: #000;
+	font-size: 1em;
+
+	-webkit-font-smoothing: antialiased;
+}
+
+.text-large {
+	font-size: 2.8em;
+}
+
+.copy-large {
+	font-size: 1.5em;
+	font-weight: 200 !important;
+	opacity: 0.65;
+}
 
 .element {
 	font-size: 30px;
@@ -72,7 +141,6 @@ body {
 }
 
 .title {
-  color: whitesmoke;
   font-family: 'benton-sans', 'Helvetica Neue', helvetica, arial, sans-serif;
   color: white;
   -webkit-font-smoothing: antialiased;
@@ -81,6 +149,28 @@ body {
   position: relative;
   float: left;
 }
+
+.worries {
+  font-family: 'benton-sans', 'Helvetica Neue', helvetica, arial, sans-serif;
+  color: whitesmoke;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+  width: 100%;
+  font-size: 30px;
+  position: relative;
+}
+
+.item {
+	font-style: italic;
+	font-weight: 100;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.no-padding {
+	padding-bottom: 0px !important;
+}
+
 .large-text {
 	font-size: 50px;
 	letter-spacing: 3px;
@@ -123,8 +213,6 @@ body {
 	height: 25px;
 	padding-bottom: 50px;
 
-
-
 }
 
 
@@ -133,7 +221,7 @@ body {
 .start-button {
   position: relative;
   background: #8978c0;
-  width: 500px;
+  width: 400px;
   height: 100px;
   display: inline-block;
   border-radius: 30px;
@@ -212,13 +300,14 @@ body {
   transition: all 300ms cubic-bezier(0.42, 0, 0.58, 1);
 }
 .btn-wrapper {
-  margin-top: 50px;
+  margin-top: 30px;
   position: relative; 
   width: 100%;
   text-align: center;
-  margin-bottom: 100px;
-
+  margin-bottom: 75px;
+  float:left;
 }
+
 .btn-title {
   margin-top: 15px;
   margin-bottom: 10px;
@@ -226,4 +315,71 @@ body {
   text-transform: capitalize;
   font-weight: 100;
   letter-spacing: 3px;
+}
+
+.feature-brick {
+	width: 50%;
+	float: left;
+	font-size: 20px;
+	height: 100px;
+}
+
+.black {
+	color: #000;
+	font-weight: 100;	
+}
+
+.client-wrapper {
+	position: relative;
+	float: left;
+	width: 100%;
+	margin-bottom: 25px;
+	margin-top: 25px;
+}
+
+.client {
+	width: 15%;
+	float: left;
+	margin-left: 2.5%;
+	margin-right: 2.5%;
+}
+
+.top {
+  margin-top: 50px;
+}
+
+.client img {
+	width: 100%;
+}
+
+.logo-wrapper .left  {
+	color: #fff;
+	position: relative;
+	top: -33px;
+	left: -15px;
+	display: inline;
+}
+.logo-wrapper .right  {
+	color: #fff;
+	position: relative;
+	top: -33px;
+	right: -15px;
+	display: inline;
+}
+
+
+@media screen and (max-width: 675px){
+	.client {
+		width: 80%;
+		margin: 0 auto;
+		margin-top: 30px;
+		float: none
+	}
+
+	.third {
+	  text-align: center;
+	  width: 100%;
+	  margin: 0;
+	  margin-bottom: 100px;
+	}
 }
