@@ -78,13 +78,13 @@
     :javascript
       $(function(){
         $(window).load(function(){
-          $(".element").typed({
-            strings: ["$ heroku create", "$ heroku login","$ git push heroku master" ],
+          $(".element-bot").typed({
+            strings: [ "$ heroku login", "$ heroku create", "$ git add -A", "$ git push origin master","$ git push heroku master" ],
             typeSpeed: 30
           });
         })
       });
-    .element
+    .element-bot
   %a{href: "https://signup.heroku.com/www-home-top"}
     .start-button.signup-btn
       .btn-title Lets do this
