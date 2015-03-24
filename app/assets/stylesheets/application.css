@@ -158,6 +158,8 @@ body {
   width: 100%;
   font-size: 30px;
   position: relative;
+  float: left;
+  margin-bottom: 50px;
 }
 
 .item {
@@ -237,7 +239,6 @@ body {
   -o-text-overflow: clip;
   text-overflow: clip;
 
-  background: $advlo_orange;
   -webkit-box-shadow: 0 5px 0 0 #6e5baa;
   box-shadow: 0 5px 0 0 #6e5baa;
 
