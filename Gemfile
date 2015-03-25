@@ -27,5 +27,4 @@ group :development, :test do
   gem 'better_errors'
 end
 
-gem 'newrelic_rpm'
 
