@@ -65,11 +65,16 @@
 .container.light
   %a.title.black.large-text{href: 'https://www.heroku.com/customers', class: 'outbound-link'} Learn from those who choose us after exploring their options..
   .client-wrapper
-    .client= image_tag 'toyota.png'
-    .client.top= image_tag 'apt_list.png'
-    .client.top= image_tag 'quickly.png'
-    .client.top= image_tag 'macys.png'
-    .client= image_tag 'scoot.png'
+    %a{href: "https://www.heroku.com/customers/toyotamotoreurope"}
+      .client= image_tag 'toyota.png'
+    %a{href: "https://www.heroku.com/customers/apartmentlist"}
+      .client.top= image_tag 'apt_list.png'
+    %a{href: "https://www.heroku.com/customers/quikly"}
+      .client.top= image_tag 'quickly.png'
+    %a{href: "https://www.heroku.com/customers/macys"}
+      .client.top= image_tag 'macys.png'
+    %a{href: "https://www.heroku.com/customers/scootnetworks"}
+      .client= image_tag 'scoot.png'
 
 
 .btn-wrapper
